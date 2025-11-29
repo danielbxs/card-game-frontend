@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components {
+  .nav-links {
+    @apply justify-between px-5 md:flex md:items-center md:gap-5;
+  }
+  .nav-link {
+    @apply hover:text-zinc-50 md:text-slate-200 md:font-semibold md:hover:text-zinc-50;
+  }
+  .nav-link--active {
+    @apply md:text-amber-500 md:font-semibold;
+  }
+  .nav-menu-items {
+    @apply flex flex-col items-stretch bg-zinc-800  text-zinc-50 border border-zinc-500 rounded-md w-1/7;
+  }
+  .nav-menu-item {
+    @apply px-3 py-1 hover:bg-amber-500 hover:text-zinc-900 font-semibold;
+  }
+}
